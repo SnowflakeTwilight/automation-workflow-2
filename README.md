@@ -2,7 +2,7 @@
 
 Automatically generate high-converting, SEO-rich property descriptions using **Google Sheets + Gemini AI** – perfect for real estate platforms, property managers, or listing aggregators.
 
-![Pipeline Overview](./4303b560-205d-4389-9cdf-9808650150ea.png)
+<img width="1312" height="468" alt="image" src="https://github.com/user-attachments/assets/40033b68-73ac-4cdf-a424-286d15a1167d" />
 
 ---
 
@@ -17,6 +17,7 @@ This automation pipeline uses [Make.com](https://www.make.com/) and integrates:
 | 3️⃣  | **Google Sheets – Update Row** | Updates the same row with the generated description and optional tags. |
 
 ---
+<img width="1741" height="534" alt="image" src="https://github.com/user-attachments/assets/c02e70f7-278e-45f4-98fe-139aa90ebd72" />
 
 ## 🌐 Webhook Demo (User-Friendly)
 
