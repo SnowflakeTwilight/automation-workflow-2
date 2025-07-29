@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏠 SEO-Optimized Description Generator for Real Estate
 
-## Getting Started
+Automatically generate high-converting, SEO-rich property descriptions using **Google Sheets + Gemini AI** – perfect for real estate platforms, property managers, or listing aggregators.
 
-First, run the development server:
+![Pipeline Overview](./4303b560-205d-4389-9cdf-9808650150ea.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 How It Works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This automation pipeline uses [Make.com](https://www.make.com/) and integrates:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Step | Tool              | Description |
+|------|-------------------|-------------|
+| 1️⃣  | **Google Sheets – Watch New Rows** | Monitors your sheet for new property entries. |
+| 2️⃣  | **Google Gemini AI – Create Completion** | Uses Gemini AI to generate an SEO-optimized description based on row data. |
+| 3️⃣  | **Google Sheets – Update Row** | Updates the same row with the generated description and optional tags. |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Webhook Demo (User-Friendly)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This version also includes **Webhook Input/Output**, so users can:
+- Send a POST request with property details
+- Get back an instant AI-generated description in the response
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```http
+POST /generate-description
+Content-Type: application/json
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+{
+  "title": "3BHK Luxury Apartment in Bandra",
+  "location": "Mumbai",
+  "features": "Sea-facing, Modern Kitchen, Near Schools"
+}
